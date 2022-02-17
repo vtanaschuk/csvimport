@@ -33,9 +33,6 @@ if(isset($_POST['import'])){
                 $sqlArr = explode('/', $fetchSelectResult['dateChange']);
                 $sqlSumDays = daysCount($sqlArr);
                 $csvSumDays = daysCount($csvArr);
-            } else {
-                $sqlSumDays = 0;
-                $csvSumDays = 0;
             }
             if ($fetchSelectResult['uid'] == $column[0] && $csvSumDays > $sqlSumDays) {
                 $query = "UPDATE user SET
