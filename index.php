@@ -34,10 +34,8 @@
 </form>
 
 <?php
-if(!$_GET["update"]){
+if(!$_GET){
     $_GET["update"] = 0;
-}
-if (!$_GET["insert"]){
     $_GET["insert"] = 0;
 }
 echo '<div class="top">';
