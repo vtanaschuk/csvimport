@@ -34,6 +34,12 @@
 </form>
 
 <?php
+if(!$_GET["update"]){
+    $_GET["update"] = 0;
+}
+if (!$_GET["insert"]){
+    $_GET["insert"] = 0;
+}
 echo '<div class="top">';
 echo '<p>update: '.$_GET["update"].'<p>';
 echo '<p> insert: '.$_GET["insert"].'<p>';
